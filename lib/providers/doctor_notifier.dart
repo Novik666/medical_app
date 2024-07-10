@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:sqlite_flutter_crud/controllers/doctor_controller.dart';
 import '../models/doctor.dart';
-import '../repositories/todo_repository.dart';
+
 
 class DoctorNotifier extends ChangeNotifier {
   final DoctorController _doctorController;

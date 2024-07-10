@@ -32,7 +32,7 @@ final TextEditingController hireDateController = TextEditingController();
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      //SingleChildScrollView to have an scrol in the screen
+      
       body: Center(
         child: SingleChildScrollView(
           child: Form(
@@ -42,7 +42,7 @@ final TextEditingController hireDateController = TextEditingController();
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  //We will copy the previous textfield we designed to avoid time consuming
+                
 
                   const ListTile(
                     title: Text(
@@ -74,7 +74,7 @@ final TextEditingController hireDateController = TextEditingController();
                     ),
                   ),
 
-                  //As we assigned our controller to the textformfields
+                 
 
                   Container(
                     margin: EdgeInsets.all(8),
@@ -104,10 +104,10 @@ final TextEditingController hireDateController = TextEditingController();
                     margin: const EdgeInsets.all(8),
                     padding:
                         const EdgeInsets.symmetric(horizontal: 10, vertical: 6),
-                    decoration: BoxDecoration(
+                        decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(8),
                         color: Colors.deepPurple.withOpacity(.2)),
-                    child: TextFormField(
+                       child: TextFormField(
                       controller: passwordController,
                       validator: (value) {
                         if (value!.isEmpty) {
@@ -122,9 +122,9 @@ final TextEditingController hireDateController = TextEditingController();
                           hintText: "Contraseña",
                           suffixIcon: IconButton(
                               onPressed: () {
-                                //In here we will create a click to show and hide the password a toggle button
+                                
                                 setState(() {
-                                  //toggle button
+                                  
                                   isVisible = !isVisible;
                                 });
                               },
@@ -134,8 +134,7 @@ final TextEditingController hireDateController = TextEditingController();
                     ),
                   ),
 
-                  //Confirm Password field
-                  // Now we check whether password matches or not
+                 
                   Container(
                     margin: const EdgeInsets.all(8),
                     padding:
@@ -160,9 +159,9 @@ final TextEditingController hireDateController = TextEditingController();
                           hintText: "Contraseña",
                           suffixIcon: IconButton(
                               onPressed: () {
-                                //In here we will create a click to show and hide the password a toggle button
+                               
                                 setState(() {
-                                  //toggle button
+                                  
                                   isVisible = !isVisible;
                                 });
                               },
@@ -310,7 +309,7 @@ final TextEditingController hireDateController = TextEditingController();
                     child: TextButton(
                         onPressed: () {
                           if (formKey.currentState!.validate()) {
-                          // Login method will be here
+                          
                           final db = TodoRepository();
                           
                           Person person = Person(
@@ -322,18 +321,18 @@ final TextEditingController hireDateController = TextEditingController();
                             speciality: specialityController.text,
                             location: locationController.text,
                             hireDate: hireDateController.text,
-                            personId: 0, // Temporal, se asignará correctamente en la transacción
+                            personId: 0, 
                           );
                           
                           User user = User(
                             user: usernameController.text,
                             password: passwordController.text,
                             type: 'Medico',
-                            personId: 0, // Temporal, se asignará correctamente en la transacción
+                            personId: 0, 
                           );
                           
                           db.insertPersonUserDoctor(person, doctor, user).whenComplete(() {
-                            // After successful user creation go to login screen
+                         
                             Navigator.push(
                               context,
                               MaterialPageRoute(
@@ -349,14 +348,14 @@ final TextEditingController hireDateController = TextEditingController();
                         )),
                   ),
 
-                  //Sign up button
+                  
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       const Text(""),
                       TextButton(
                           onPressed: () {
-                            //Navigate to sign up
+                          
                             Navigator.push(
                                 context,
                                 MaterialPageRoute(

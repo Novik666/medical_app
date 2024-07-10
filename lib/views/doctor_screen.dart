@@ -128,7 +128,7 @@ class _DoctorScreenState extends State<DoctorScreen> with ScrollToLastItemMixin 
                 title: Text('${doctor.name} - ${doctor.speciality}'),
                 subtitle: Text('${doctor.location} - ${doctor.birthDate}'),
                 onTap: () {
-                  // Establecer el doctor actual y navegar a la pantalla de citas
+                 
                   _doctorNotifier.setCurrentDoctor(doctor);
                   Navigator.push(
                     context,

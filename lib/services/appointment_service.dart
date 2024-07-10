@@ -1,4 +1,3 @@
-import 'package:sqlite_flutter_crud/models/doctor.dart';
 import '../models/appointment.dart';
 import '../repositories/todo_repository.dart';
 

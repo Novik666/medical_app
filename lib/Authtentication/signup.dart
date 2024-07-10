@@ -30,7 +30,7 @@ final TextEditingController birthDateController = TextEditingController();
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      //SingleChildScrollView to have an scrol in the screen
+     
       body: Center(
         child: SingleChildScrollView(
           child: Form(
@@ -40,7 +40,7 @@ final TextEditingController birthDateController = TextEditingController();
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  //We will copy the previous textfield we designed to avoid time consuming
+                 
 
                   const ListTile(
                     title: Text(
@@ -72,7 +72,7 @@ final TextEditingController birthDateController = TextEditingController();
                     ),
                   ),
 
-                  //As we assigned our controller to the textformfields
+                
 
                   Container(
                     margin: EdgeInsets.all(8),
@@ -97,7 +97,7 @@ final TextEditingController birthDateController = TextEditingController();
                     ),
                   ),
 
-                  //Password field
+                 //Password field
                   Container(
                     margin: const EdgeInsets.all(8),
                     padding:
@@ -120,9 +120,9 @@ final TextEditingController birthDateController = TextEditingController();
                           hintText: "Contraseña",
                           suffixIcon: IconButton(
                               onPressed: () {
-                                //In here we will create a click to show and hide the password a toggle button
+                               
                                 setState(() {
-                                  //toggle button
+                                  
                                   isVisible = !isVisible;
                                 });
                               },
@@ -132,8 +132,7 @@ final TextEditingController birthDateController = TextEditingController();
                     ),
                   ),
 
-                  //Confirm Password field
-                  // Now we check whether password matches or not
+                 
                   Container(
                     margin: const EdgeInsets.all(8),
                     padding:
@@ -158,9 +157,9 @@ final TextEditingController birthDateController = TextEditingController();
                           hintText: "Contraseña",
                           suffixIcon: IconButton(
                               onPressed: () {
-                                //In here we will create a click to show and hide the password a toggle button
+                                
                                 setState(() {
-                                  //toggle button
+                                
                                   isVisible = !isVisible;
                                 });
                               },

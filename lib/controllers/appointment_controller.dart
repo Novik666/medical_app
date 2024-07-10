@@ -1,5 +1,4 @@
 import 'package:sqlite_flutter_crud/models/doctor.dart';
-import 'package:sqlite_flutter_crud/models/user.dart';
 import '../models/appointment.dart';
 import '../services/appointment_service.dart';
 
@@ -69,14 +68,7 @@ class AppointmentController {
     }
   }
 
- /* Future<void> updateAppointmentCompletion(Appointment appointment, bool isComplete) async {
-    try {
-      appointment.complete = isComplete;
-      await _appointmentService.updateAppointment(appointment);
-    } catch (e) {
-      throw Exception('Error al completar la cita: $e');
-    }
-  }*/
+
 
 
 }

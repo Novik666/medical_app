@@ -50,14 +50,7 @@ class AppointmentAllController {
     }
   }
 
- /* Future<void> updateAppointmentCompletion(Appointment appointment, bool isComplete) async {
-    try {
-      appointment.complete = isComplete;
-      await _appointmentService.updateAppointment(appointment);
-    } catch (e) {
-      throw Exception('Error al completar la cita: $e');
-    }
-  }*/
+
 
 
 }

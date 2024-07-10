@@ -3,9 +3,7 @@ import 'package:provider/provider.dart';
 import 'package:sqlite_flutter_crud/models/user.dart';
 import 'package:sqlite_flutter_crud/providers/appointmentAll_notifier.dart';
 import '../models/appointment.dart';
-import '../models/doctor.dart';
 import '../controllers/appointmentAll_controller.dart';
-import '../providers/appointment_notifier.dart';
 import '../repositories/todo_repository.dart';
 import '../services/appointmentAll_service.dart';
 
