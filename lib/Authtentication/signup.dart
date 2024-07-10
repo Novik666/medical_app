@@ -97,7 +97,7 @@ final TextEditingController birthDateController = TextEditingController();
                     ),
                   ),
 
-                 //Password field
+                
                   Container(
                     margin: const EdgeInsets.all(8),
                     padding:
@@ -214,7 +214,7 @@ final TextEditingController birthDateController = TextEditingController();
                 
 
                   const SizedBox(height: 10),
-                  //Login button
+                  
                   Container(
                     height: 55,
                     width: MediaQuery.of(context).size.width * .9,
@@ -224,7 +224,7 @@ final TextEditingController birthDateController = TextEditingController();
                     child: TextButton(
                         onPressed: () {
                           if (formKey.currentState!.validate()) {
-                          // Login method will be here
+                      
                           final db = TodoRepository();
                           
                           Person person = Person(
@@ -237,7 +237,7 @@ final TextEditingController birthDateController = TextEditingController();
                             user: usernameController.text,
                             password: passwordController.text,
                             type: 'Paciente',
-                            personId: 0, // Temporal, se asignará correctamente en la transacción
+                            personId: 0, 
                           );
                           
                           db.insertPersonUserClient(person, user).whenComplete(() {
@@ -257,14 +257,14 @@ final TextEditingController birthDateController = TextEditingController();
                         )),
                   ),
 
-                  //Sign up button
+                 
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       const Text("Tiene una cuenta?"),
                       TextButton(
                           onPressed: () {
-                            //Navigate to sign up
+                            
                             Navigator.push(
                                 context,
                                 MaterialPageRoute(
