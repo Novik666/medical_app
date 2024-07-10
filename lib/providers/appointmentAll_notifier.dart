@@ -51,7 +51,7 @@ class AppointmentAllNotifier extends ChangeNotifier {
       _errorMessage = null;
       notifyListeners();
       await _appointmentAllController.deleteAppointmentAll(appointment);
-      loadAppointmentAllsAll(_appointmentAllController.user2.id); // Reload appointments after deleting
+      loadAppointmentAllsAll(_appointmentAllController.user2.id); 
     } catch (e) {
       _errorMessage = "Error al eliminar la cita: $e";
     } finally {
