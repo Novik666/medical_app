@@ -10,7 +10,7 @@ class DoctorNotifier extends ChangeNotifier {
   Doctor2? _currentDoctor;
 
   DoctorNotifier(this._doctorController) {
-    _loadDoctors(); // Carga inicial de todos los doctores
+    _loadDoctors(); 
   }
 
   bool get isLoading => _isLoading;
@@ -54,26 +54,5 @@ class DoctorNotifier extends ChangeNotifier {
 
 
 
-/*
-  Future<void> addPlan(String name) async {
-    try {
-      _errorMessage = null;
-      notifyListeners();
-      await _doctorController.doctorPlan(name);
-    } catch (e) {
-      _errorMessage = "Error al añadir el plan";
-    }
-    notifyListeners();
-  }
 
-  Future<void> deletePlan(Plan plan) async {
-    try {
-      _errorMessage = null;
-      notifyListeners();
-      await _planController.deletePlan(plan);
-    } catch (e) {
-      _errorMessage = "Error al eliminar el plan $e";
-    }
-    notifyListeners();
-  }*/
 
